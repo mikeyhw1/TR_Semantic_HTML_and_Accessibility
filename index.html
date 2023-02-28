@@ -4,24 +4,27 @@
         <meta charset="UTF-8" />
         <meta name="description" content="Tech Returners News" />
         <meta name="keywords" content="Tech Returners News" />
+        <link rel="stylesheet" href="./styles.css" />
         <title>Tech Returners News</title>
     </head>
     <body>
         <header>
-            <h1>Tech Returner News</h1>
+            <h1 id="header">Tech Returner News</h1>
 
-            <fieldset>
-                <legend>♿️Accessibility Preferences</legend>
+            <div id="div_accessibility">
+                <fieldset id="fieldset">
+                    <legend><b>♿️Accessibility Preferences</b></legend>
 
-                <input type="checkbox" id="accessibility1" name="accessibility1" value="accessibility1" />
-                <label for="accessibility1"> Large font size</label><br />
-                <input type="checkbox" id="accessibility2" name="accessibility2" value="accessibility2" />
-                <label for="accessibility2"> High contrast mode</label><br />
-                <input type="checkbox" id="accessibility3" name="accessibility3" value="accessibility3" />
-                <label for="accessibility3"> Disable flashing elements</label><br />
+                    <input type="checkbox" id="accessibility1" name="accessibility1" value="accessibility1" />
+                    <label class="checkboxText" for="accessibility1"> Large font size</label><br />
+                    <input type="checkbox" id="accessibility2" name="accessibility2" value="accessibility2" />
+                    <label class="checkboxText" for="accessibility2"> High contrast mode</label><br />
+                    <input type="checkbox" id="accessibility3" name="accessibility3" value="accessibility3" />
+                    <label class="checkboxText" for="accessibility3"> Disable flashing elements</label><br />
 
-                <input type="submit" value="Reload Website" />
-            </fieldset>
+                    <input class="buttons" type="submit" value="Reload Website" />
+                </fieldset>
+            </div>
 
             <hr />
             <nav>
@@ -40,14 +43,14 @@
 
         <main>
             <article>
-                <h1>Accessibility Features: Easy Wins</h1>
-                <address>
+                <h1 class="bigTitle">Accessibility Features: Easy Wins</h1>
+                <address class="bigTitleAddress">
                     <a rel="author email" href="mailto:jimmy.eggs@hotmail.com">Jim Eggs</a>
                     <br />
                     <time datetime="2021-08-04">04.08.21</time>
                 </address>
-                <h2>Handy tips on how to create accessible websites for everyone</h2>
-                <img src="./pic.png" alt="A Key named Accessibility on keyboard" width="500" />
+                <h2 class="bigTitle">Handy tips on how to create accessible websites for everyone</h2>
+                <img class="bigImg" src="./pic.png" alt="A Key named Accessibility on keyboard" width="500" />
 
                 <section>
                     <h3>Introduction</h3>
@@ -138,7 +141,7 @@
 
                 <section>
                     <h3>More stories</h3>
-                    <nav>
+                    <nav id="moreStories">
                         <ul>
                             <li>
                                 <a rel="Tokyo Olympics: gold for Great Britain" href="#"
@@ -193,7 +196,7 @@
                 <a rel="Sport" href="/Sport/">Sport</a> | <a rel="Culture" href="/Culture/">Culture</a> |
                 <a rel="Tech" href="/Tech/">Tech</a>
             </nav>
-            <address>© 2021 Tech Returners News</address>
+            <address id="footeraddress">© 2021 Tech Returners News</address>
         </footer>
     </body>
 </html>
